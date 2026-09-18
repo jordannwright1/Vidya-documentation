@@ -52,7 +52,6 @@ navi/
     ├── src/middleware.ts        Clerk route protection
     ├── src/app/chat/            Main chat UI
     ├── src/app/subagents/       Subagent management UI
-    ├── src/app/sandbox/         Public subagent-preview sandbox (experimental)
     ├── src/app/api/             Next.js API routes (proxy to backend, Stripe webhooks, etc.)
     └── src/components/          Shared UI components
 ```
