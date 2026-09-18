@@ -114,7 +114,6 @@ Clerk provides session authentication and JWT verification. Admin-only routes us
 
 Subagents can be connected to a user's own AWS S3 bucket via a one-click CloudFormation provisioning flow: the user launches a pre-filled quick-create stack in their own account, which creates a bucket and an IAM role that trusts the platform's service identity, scoped by an external ID tied to the subagent. The platform's own service credentials hold no standing permissions on any user's bucket — access is always via a scoped, per-subagent role assumption.
 
-An experimental, currently-inactive path also supports exporting a subagent as a self-hosted container or a shareable trial sandbox link; this path does not share the platform's persistent memory system.
 
 ### Data retention
 
