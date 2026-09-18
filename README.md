@@ -117,7 +117,7 @@ Subagents can be connected to a user's own AWS S3 bucket via a one-click CloudFo
 
 ### Data retention
 
-The general policy: uploaded data (datasets, RAG documents) is held in memory only, or in a short-TTL temporary cache — never persisted to a database. The one deliberate exception is chat message text itself, which is stored to support chat history. Generated images and computed results attached to a chat message are not persisted beyond the live response, only the text is. A generated-skill cache stores code and task text, never raw dataset rows.
+The general policy: uploaded data (datasets, RAG documents) is held in memory only, or in a short-TTL temporary cache — never persisted to a database. The one deliberate exception is chat message text itself, which is stored to support chat history. Generated images and computed results attached to a chat message are downloadable, and not persisted beyond the live response, only the text is. A generated-skill cache stores code and task text, never raw dataset rows.
 
 ### Evaluation harness
 
