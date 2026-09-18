@@ -78,7 +78,7 @@ Every request runs the graph in its own subprocess rather than a thread, so an i
 
 ### Vector memory
 
-Long-term memory is stored in Pinecone, namespaced per user (spanning all of a user's chat threads) or per subagent (each subagent has its own persistent memory). The save pipeline redacts personally identifiable information first, then summarizes the redacted text into a short semantic gist before embedding and storing it — Pinecone never holds a user's verbatim words, only a paraphrase, and the save step fails closed (skips entirely rather than storing partial data). Retrieval embeds the incoming query, fetches nearest neighbors, and applies an LLM relevance filter to select only what's actually useful, rather than a raw similarity-score cutoff.
+Long-term memory is stored in Pinecone, namespaced per user (spanning all of a user's chat threads) or per subagent (each subagent has its own persistent memory). The save pipeline redacts personally identifiable information first, then summarizes the redacted text into a short semantic summary before embedding and storing it — Pinecone never holds a user's verbatim words, only a paraphrase, and the save step fails closed (skips entirely rather than storing partial data). Retrieval embeds the incoming query, fetches nearest neighbors, and applies an LLM relevance filter to select only what's actually useful, rather than a raw similarity-score cutoff.
 
 ### Ethics gate
 
