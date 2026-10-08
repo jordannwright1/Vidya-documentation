@@ -49,9 +49,9 @@ Anything that only reads information (a search, a fetch) runs immediately. Anyth
 |---|---|---|
 | Chat queries | 10/day | 200/mo included, then $0.30/query (capped at 250) |
 | Subagents | Included | Unlimited |
-| AWS S3 integration | — | ✅ |
-| Persistent memory | — | ✅ |
-| Priority access | — | ✅ |
+| AWS S3 integration | ✅ | ✅ |
+| Persistent memory | ✅ | ✅ |
+| Priority access | ✅ | ✅ |
 
 ## Privacy & your data
 
