@@ -39,7 +39,7 @@ A subagent can also be connected to your own AWS S3 bucket with a one-click setu
 
 ### Connect your tools
 
-Connect Vidya to Slack, Notion, Jira, Asana, Stripe, Canva, Zapier, or any other service that supports the Model Context Protocol — not just a fixed list, any compliant server. Once connected, just ask in plain language: *"search #project-alpha for the latest update and write a summary page in Notion."*
+Connect Vidya to services that support MCP (currently supports Notion, Slack, and Zapier). Once connected, just ask in plain language: *"search #project-alpha in Slack for the latest update and write a summary page in Notion."*
 
 Anything that only reads information (a search, a fetch) runs immediately. Anything that changes something outside Vidya — sending a message, creating a page, updating a record — is held for your explicit approval first. You'll see exactly what it's about to do before it happens, and you can approve it, reject it, or opt a specific tool into running automatically once you trust it.
 
